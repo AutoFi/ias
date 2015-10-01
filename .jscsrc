@@ -1,0 +1,8 @@
+{
+    "preset": "node-style-guide"
+    , "validateIndentation": "\t"
+    , "requireTrailingComma": false
+    , "requireCapitalizedComments": false
+    , "maximumLineLength": 1000
+    //, "disallowTrailingComma": true
+}

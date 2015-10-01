@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://schemas.datacontract.org/2004/07/IAS" xmlns:ns2="https://api.iasdirect.com/ElectronicProcessing">
+  <SOAP-ENV:Body>
+    <ns2:GetRates>
+      <ns2:request>
+        <ns1:Authentication>
+          <ns1:LoginName>{{auth.loginName}}</ns1:LoginName>
+          <ns1:LoginPassword>{{auth.loginPassword}}</ns1:LoginPassword>
+          <ns1:UserAgent>{{auth.userAgent}}</ns1:UserAgent>
+          <ns1:UserEmailAddress>{{auth.userEmailAddress}}</ns1:UserEmailAddress>
+          <ns1:UserID>{{auth.userId}}</ns1:UserID>
+          <ns1:UserIPAddress>{{auth.userIPAddress}}</ns1:UserIPAddress>
+        </ns1:Authentication>
+        <ns1:ContractDate>{{contractDate}}</ns1:ContractDate>
+        <ns1:DealerID>{{dealerId}}</ns1:DealerID>
+        <ns1:LimitTireWheel>{{limitTireWheel}}</ns1:LimitTireWheel>
+        <ns1:MasterDealerID></ns1:MasterDealerID>
+        <ns1:VehicleInfo>
+          <ns1:AgeType>{{vehicle.ageType}}</ns1:AgeType>
+          <ns1:ChromeStyleID>0</ns1:ChromeStyleID>
+          <ns1:HasChromeWheels>false</ns1:HasChromeWheels>
+          <ns1:HasDealerUpgradedWheelsTires>false</ns1:HasDealerUpgradedWheelsTires>
+          <ns1:HasRunFlatTires>false</ns1:HasRunFlatTires>
+          <ns1:InServiceDate>{{vehicle.inServiceDate}}</ns1:InServiceDate>
+          <ns1:MSRP>{{vehicle.msrp}}</ns1:MSRP>
+          <ns1:Make>{{vehicle.make}}</ns1:Make>
+          <ns1:Mileage>{{vehicle.mileage}}</ns1:Mileage>
+          <ns1:Model>{{vehicle.model}}</ns1:Model>
+          <ns1:NADARetail>{{vehicle.nadaRetail}}</ns1:NADARetail>
+          <ns1:PurchasePrice>{{vehicle.purchasePrice}}</ns1:PurchasePrice>
+          <ns1:TrimLevel>{{vehicle.trimLevel}}</ns1:TrimLevel>
+          <ns1:UsageType>{{vehicle.usageType}}</ns1:UsageType>
+          <ns1:VIN>{{vehicle.vin}}</ns1:VIN>
+          <ns1:Year>{{vehicle.year}}</ns1:Year>
+        </ns1:VehicleInfo>
+      </ns2:request>
+    </ns2:GetRates>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

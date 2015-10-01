@@ -1,0 +1,949 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body>
+        <GetRatesResponse xmlns="https://api.iasdirect.com/ElectronicProcessing">
+            <GetRatesResult xmlns:a="http://schemas.datacontract.org/2004/07/IAS" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:_ErrorInfo i:nil="true" /><a:_Rates i:nil="true" />
+                <a:ErrorInfo>
+                    <a:ErrorDescription>Success</a:ErrorDescription>
+                    <a:ErrorOccurred>false</a:ErrorOccurred>
+                </a:ErrorInfo>
+                <a:Rates>
+                    <a:Common.RateType>
+                        <a:ComboID>8012</a:ComboID>
+                        <a:DealerCost>259</a:DealerCost>
+                        <a:DealerRemit>259</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>TDWRRKVSCP</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>C8012</a:PlanID>
+                        <a:ProductLine>COMBO</a:ProductLine>
+                        <a:ProgramFullName>PDR HORIZONTAL_UNLTD 5YR+ROAD ASSIS PL ONLY</a:ProgramFullName><a:ProgramID i:nil="true" />
+                        <a:ProgramName>Dent Unlimited + Roadside Assistance</a:ProgramName>
+                        <a:SuggestedRetailPrice>499</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>60</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType>
+                        <a:ComboID>8010</a:ComboID>
+                        <a:DealerCost>229</a:DealerCost>
+                        <a:DealerRemit>229</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>TDWRRKVSCP</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>C8010</a:PlanID>
+                        <a:ProductLine>COMBO</a:ProductLine>
+                        <a:ProgramFullName>PDR HORIZONTAL_UNLTD 3YR+ROAD ASSIS PL ONLY</a:ProgramFullName><a:ProgramID i:nil="true" />
+                        <a:ProgramName>Dent Unlimited + Roadside Assistance</a:ProgramName>
+                        <a:SuggestedRetailPrice>499</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>36</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType>
+                        <a:ComboID>374</a:ComboID>
+                        <a:DealerCost>371</a:DealerCost>
+                        <a:DealerRemit>331</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>TDWRXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>C374</a:PlanID>
+                        <a:ProductLine>COMBO</a:ProductLine>
+                        <a:ProgramFullName>INTIRE-GOLD-PL-HP-1_5YR+PDR UNLTD 5YR+WIND REPAIR_5YR</a:ProgramFullName><a:ProgramID i:nil="true" />
+                        <a:ProgramName>Dent Unlimited + Tire/Wheel (Cosmetic, Full ERA) + Wind Repair</a:ProgramName>
+                        <a:SuggestedRetailPrice>454</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>60</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType>
+                        <a:ComboID>372</a:ComboID>
+                        <a:DealerCost>356</a:DealerCost>
+                        <a:DealerRemit>316</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>TDWRXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>C372</a:PlanID>
+                        <a:ProductLine>COMBO</a:ProductLine>
+                        <a:ProgramFullName>INTIRE-GOLD-PL-HP-1_3YR+PDR UNLTD 3YR+WIND REPAIR_3YR</a:ProgramFullName><a:ProgramID i:nil="true" />
+                        <a:ProgramName>Dent Unlimited + Tire/Wheel (Cosmetic, Full ERA) + Wind Repair</a:ProgramName>
+                        <a:SuggestedRetailPrice>439</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>36</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType>
+                        <a:ComboID>132</a:ComboID>
+                        <a:DealerCost>324</a:DealerCost>
+                        <a:DealerRemit>284</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>TDWRXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>C132</a:PlanID>
+                        <a:ProductLine>COMBO</a:ProductLine>
+                        <a:ProgramFullName>INTIRE-PL-HP-1_5YR+PDR UNLTD 5YR+WIND REPAIR_5YR</a:ProgramFullName><a:ProgramID i:nil="true" />
+                        <a:ProgramName>Dent Unlimited + Tire/Wheel (Full ERA) + Wind Repair</a:ProgramName>
+                        <a:SuggestedRetailPrice>434</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>60</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType>
+                        <a:ComboID>130</a:ComboID>
+                        <a:DealerCost>309</a:DealerCost>
+                        <a:DealerRemit>269</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>TDWRXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>C130</a:PlanID>
+                        <a:ProductLine>COMBO</a:ProductLine>
+                        <a:ProgramFullName>INTIRE-PL-HP-1_3YR+PDR UNLTD 3YR+WIND REPAIR_3YR</a:ProgramFullName><a:ProgramID i:nil="true" />
+                        <a:ProgramName>Dent Unlimited + Tire/Wheel (Full ERA) + Wind Repair</a:ProgramName>
+                        <a:SuggestedRetailPrice>419</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>36</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>309</a:DealerCost>
+                        <a:DealerRemit>169</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>DBXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P623</a:PlanID>
+                        <a:ProductLine>DENT</a:ProductLine>
+                        <a:ProgramFullName>PDR UNLTD 5YR</a:ProgramFullName>
+                        <a:ProgramID>623</a:ProgramID>
+                        <a:ProgramName>Dent Unlimited</a:ProgramName>
+                        <a:SuggestedRetailPrice>409</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>60</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>289</a:DealerCost>
+                        <a:DealerRemit>149</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>DBXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P621</a:PlanID>
+                        <a:ProductLine>DENT</a:ProductLine>
+                        <a:ProgramFullName>PDR UNLTD 3YR</a:ProgramFullName>
+                        <a:ProgramID>621</a:ProgramID>
+                        <a:ProgramName>Dent Unlimited</a:ProgramName>
+                        <a:SuggestedRetailPrice>389</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>36</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>219</a:DealerCost>
+                        <a:DealerRemit>219</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>G1GMP</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" />
+                        <a:MaxLoanTerm>84</a:MaxLoanTerm><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" />
+                        <a:MinLoanTerm>12</a:MinLoanTerm><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P714</a:PlanID>
+                        <a:ProductLine>GAP</a:ProductLine>
+                        <a:ProgramFullName>GAP I 84 BL VS P</a:ProgramFullName>
+                        <a:ProgramID>714</a:ProgramID>
+                        <a:ProgramName>GAP 0-84 - GMAC/Ally</a:ProgramName>
+                        <a:SuggestedRetailPrice>309</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" /><a:TermMonths i:nil="true" /></a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>253</a:DealerCost>
+                        <a:DealerRemit>253</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>DDMG-12000</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" />
+                        <a:MaxVehiclePrice>150000.0000</a:MaxVehiclePrice><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P5775</a:PlanID>
+                        <a:ProductLine>GAP DEP</a:ProductLine>
+                        <a:ProgramFullName>GAP 12 DDM_12000</a:ProgramFullName>
+                        <a:ProgramID>5775</a:ProgramID>
+                        <a:ProgramName>GAP 12 DDM</a:ProgramName>
+                        <a:SuggestedRetailPrice>0</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>12</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>341</a:DealerCost>
+                        <a:DealerRemit>341</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>DDMG-12000</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" />
+                        <a:MaxVehiclePrice>150000.0000</a:MaxVehiclePrice><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P5779</a:PlanID>
+                        <a:ProductLine>GAP DEP</a:ProductLine>
+                        <a:ProgramFullName>GAP 24 DDM_12000</a:ProgramFullName>
+                        <a:ProgramID>5779</a:ProgramID>
+                        <a:ProgramName>GAP 24 DDM</a:ProgramName>
+                        <a:SuggestedRetailPrice>0</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>24</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>428</a:DealerCost>
+                        <a:DealerRemit>428</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>DDMG-12000</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" />
+                        <a:MaxVehiclePrice>150000.0000</a:MaxVehiclePrice><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P5783</a:PlanID>
+                        <a:ProductLine>GAP DEP</a:ProductLine>
+                        <a:ProgramFullName>GAP 36 DDM_12000</a:ProgramFullName>
+                        <a:ProgramID>5783</a:ProgramID>
+                        <a:ProgramName>GAP 36 DDM</a:ProgramName>
+                        <a:SuggestedRetailPrice>0</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>36</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>516</a:DealerCost>
+                        <a:DealerRemit>516</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>DDMG-12000</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" />
+                        <a:MaxVehiclePrice>150000.0000</a:MaxVehiclePrice><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P5787</a:PlanID>
+                        <a:ProductLine>GAP DEP</a:ProductLine>
+                        <a:ProgramFullName>GAP 48 DDM_12000</a:ProgramFullName>
+                        <a:ProgramID>5787</a:ProgramID>
+                        <a:ProgramName>GAP 48 DDM</a:ProgramName>
+                        <a:SuggestedRetailPrice>0</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>48</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>282</a:DealerCost>
+                        <a:DealerRemit>282</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>DDMG-16000</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" />
+                        <a:MaxVehiclePrice>150000.0000</a:MaxVehiclePrice><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P5776</a:PlanID>
+                        <a:ProductLine>GAP DEP</a:ProductLine>
+                        <a:ProgramFullName>GAP 12 DDM_16000</a:ProgramFullName>
+                        <a:ProgramID>5776</a:ProgramID>
+                        <a:ProgramName>GAP 12 DDM</a:ProgramName>
+                        <a:SuggestedRetailPrice>0</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>12</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>398</a:DealerCost>
+                        <a:DealerRemit>398</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>DDMG-16000</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" />
+                        <a:MaxVehiclePrice>150000.0000</a:MaxVehiclePrice><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P5780</a:PlanID>
+                        <a:ProductLine>GAP DEP</a:ProductLine>
+                        <a:ProgramFullName>GAP 24 DDM_16000</a:ProgramFullName>
+                        <a:ProgramID>5780</a:ProgramID>
+                        <a:ProgramName>GAP 24 DDM</a:ProgramName>
+                        <a:SuggestedRetailPrice>0</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>24</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>515</a:DealerCost>
+                        <a:DealerRemit>515</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>DDMG-16000</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" />
+                        <a:MaxVehiclePrice>150000.0000</a:MaxVehiclePrice><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P5784</a:PlanID>
+                        <a:ProductLine>GAP DEP</a:ProductLine>
+                        <a:ProgramFullName>GAP 36 DDM_16000</a:ProgramFullName>
+                        <a:ProgramID>5784</a:ProgramID>
+                        <a:ProgramName>GAP 36 DDM</a:ProgramName>
+                        <a:SuggestedRetailPrice>0</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>36</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>631</a:DealerCost>
+                        <a:DealerRemit>631</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>DDMG-16000</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" />
+                        <a:MaxVehiclePrice>150000.0000</a:MaxVehiclePrice><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P5788</a:PlanID>
+                        <a:ProductLine>GAP DEP</a:ProductLine>
+                        <a:ProgramFullName>GAP 48 DDM_16000</a:ProgramFullName>
+                        <a:ProgramID>5788</a:ProgramID>
+                        <a:ProgramName>GAP 48 DDM</a:ProgramName>
+                        <a:SuggestedRetailPrice>0</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>48</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>189</a:DealerCost>
+                        <a:DealerRemit>189</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>DDMG-4000</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" />
+                        <a:MaxVehiclePrice>150000.0000</a:MaxVehiclePrice><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P5773</a:PlanID>
+                        <a:ProductLine>GAP DEP</a:ProductLine>
+                        <a:ProgramFullName>GAP 12 DDM_4000</a:ProgramFullName>
+                        <a:ProgramID>5773</a:ProgramID>
+                        <a:ProgramName>GAP 12 DDM</a:ProgramName>
+                        <a:SuggestedRetailPrice>0</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>12</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>212</a:DealerCost>
+                        <a:DealerRemit>212</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>DDMG-4000</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" />
+                        <a:MaxVehiclePrice>150000.0000</a:MaxVehiclePrice><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P5777</a:PlanID>
+                        <a:ProductLine>GAP DEP</a:ProductLine>
+                        <a:ProgramFullName>GAP 24 DDM_4000</a:ProgramFullName>
+                        <a:ProgramID>5777</a:ProgramID>
+                        <a:ProgramName>GAP 24 DDM</a:ProgramName>
+                        <a:SuggestedRetailPrice>0</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>24</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>235</a:DealerCost>
+                        <a:DealerRemit>235</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>DDMG-4000</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" />
+                        <a:MaxVehiclePrice>150000.0000</a:MaxVehiclePrice><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P5781</a:PlanID>
+                        <a:ProductLine>GAP DEP</a:ProductLine>
+                        <a:ProgramFullName>GAP 36 DDM_4000</a:ProgramFullName>
+                        <a:ProgramID>5781</a:ProgramID>
+                        <a:ProgramName>GAP 36 DDM</a:ProgramName>
+                        <a:SuggestedRetailPrice>0</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>36</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>258</a:DealerCost>
+                        <a:DealerRemit>258</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>DDMG-4000</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" />
+                        <a:MaxVehiclePrice>150000.0000</a:MaxVehiclePrice><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P5785</a:PlanID>
+                        <a:ProductLine>GAP DEP</a:ProductLine>
+                        <a:ProgramFullName>GAP 48 DDM_4000</a:ProgramFullName>
+                        <a:ProgramID>5785</a:ProgramID>
+                        <a:ProgramName>GAP 48 DDM</a:ProgramName>
+                        <a:SuggestedRetailPrice>0</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>48</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>221</a:DealerCost>
+                        <a:DealerRemit>221</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>DDMG-8000</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" />
+                        <a:MaxVehiclePrice>150000.0000</a:MaxVehiclePrice><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P5774</a:PlanID>
+                        <a:ProductLine>GAP DEP</a:ProductLine>
+                        <a:ProgramFullName>GAP 12 DDM_8000</a:ProgramFullName>
+                        <a:ProgramID>5774</a:ProgramID>
+                        <a:ProgramName>GAP 12 DDM</a:ProgramName>
+                        <a:SuggestedRetailPrice>0</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>12</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>275</a:DealerCost>
+                        <a:DealerRemit>275</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>DDMG-8000</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" />
+                        <a:MaxVehiclePrice>150000.0000</a:MaxVehiclePrice><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P5778</a:PlanID>
+                        <a:ProductLine>GAP DEP</a:ProductLine>
+                        <a:ProgramFullName>GAP 24 DDM_8000</a:ProgramFullName>
+                        <a:ProgramID>5778</a:ProgramID>
+                        <a:ProgramName>GAP 24 DDM</a:ProgramName>
+                        <a:SuggestedRetailPrice>0</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>24</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>330</a:DealerCost>
+                        <a:DealerRemit>330</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>DDMG-8000</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" />
+                        <a:MaxVehiclePrice>150000.0000</a:MaxVehiclePrice><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P5782</a:PlanID>
+                        <a:ProductLine>GAP DEP</a:ProductLine>
+                        <a:ProgramFullName>GAP 36 DDM_8000</a:ProgramFullName>
+                        <a:ProgramID>5782</a:ProgramID>
+                        <a:ProgramName>GAP 36 DDM</a:ProgramName>
+                        <a:SuggestedRetailPrice>0</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>36</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>385</a:DealerCost>
+                        <a:DealerRemit>385</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>DDMG-8000</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" />
+                        <a:MaxVehiclePrice>150000.0000</a:MaxVehiclePrice><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P5786</a:PlanID>
+                        <a:ProductLine>GAP DEP</a:ProductLine>
+                        <a:ProgramFullName>GAP 48 DDM_8000</a:ProgramFullName>
+                        <a:ProgramID>5786</a:ProgramID>
+                        <a:ProgramName>GAP 48 DDM</a:ProgramName>
+                        <a:SuggestedRetailPrice>0</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>48</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>262</a:DealerCost>
+                        <a:DealerRemit>262</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>LSMG</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" />
+                        <a:MaxVehiclePrice>64000.0000</a:MaxVehiclePrice><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" />
+                        <a:MinVehiclePrice>32000.0100</a:MinVehiclePrice>
+                        <a:PlanID>P5760</a:PlanID>
+                        <a:ProductLine>GAP DEP</a:ProductLine>
+                        <a:ProgramFullName>GAP 12 LSM_64</a:ProgramFullName>
+                        <a:ProgramID>5760</a:ProgramID>
+                        <a:ProgramName>GAP 12 LSM</a:ProgramName>
+                        <a:SuggestedRetailPrice>0</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>12</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>296</a:DealerCost>
+                        <a:DealerRemit>296</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>LSMG</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" />
+                        <a:MaxVehiclePrice>64000.0000</a:MaxVehiclePrice><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" />
+                        <a:MinVehiclePrice>32000.0100</a:MinVehiclePrice>
+                        <a:PlanID>P5765</a:PlanID>
+                        <a:ProductLine>GAP DEP</a:ProductLine>
+                        <a:ProgramFullName>GAP 24 LSM_64</a:ProgramFullName>
+                        <a:ProgramID>5765</a:ProgramID>
+                        <a:ProgramName>GAP 24 LSM</a:ProgramName>
+                        <a:SuggestedRetailPrice>0</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>24</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>360</a:DealerCost>
+                        <a:DealerRemit>360</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>LSMG</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" />
+                        <a:MaxVehiclePrice>64000.0000</a:MaxVehiclePrice><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" />
+                        <a:MinVehiclePrice>32000.0100</a:MinVehiclePrice>
+                        <a:PlanID>P5770</a:PlanID>
+                        <a:ProductLine>GAP DEP</a:ProductLine>
+                        <a:ProgramFullName>GAP 36 LSM_64</a:ProgramFullName>
+                        <a:ProgramID>5770</a:ProgramID>
+                        <a:ProgramName>GAP 36 LSM</a:ProgramName>
+                        <a:SuggestedRetailPrice>0</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>36</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType>
+                        <a:ComboID>295</a:ComboID>
+                        <a:DealerCost>200</a:DealerCost>
+                        <a:DealerRemit>160</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>RKG</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>C295</a:PlanID>
+                        <a:ProductLine>KEY REPLACEMENT</a:ProductLine>
+                        <a:ProgramFullName>KEY/LUXURY-G_5YR+ROAD ASSIS PL ONLY</a:ProgramFullName><a:ProgramID i:nil="true" />
+                        <a:ProgramName>Key Replacement Luxury + Roadside Assistance</a:ProgramName>
+                        <a:SuggestedRetailPrice>265</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>60</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType>
+                        <a:ComboID>171</a:ComboID>
+                        <a:DealerCost>229</a:DealerCost>
+                        <a:DealerRemit>189</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>PSSGPXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>C171</a:PlanID>
+                        <a:ProductLine>PAINT/FABRIC</a:ProductLine>
+                        <a:ProgramFullName>PDR LTD 250+POLY-PLATINUM</a:ProgramFullName><a:ProgramID i:nil="true" />
+                        <a:ProgramName>Dent + Paint/Fabric Platinum</a:ProgramName>
+                        <a:SuggestedRetailPrice>324</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>72</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType>
+                        <a:ComboID>171</a:ComboID>
+                        <a:DealerCost>229</a:DealerCost>
+                        <a:DealerRemit>189</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>PSSGPXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>C171</a:PlanID>
+                        <a:ProductLine>PAINT/FABRIC</a:ProductLine>
+                        <a:ProgramFullName>PDR LTD 250+POLY-PLATINUM</a:ProgramFullName><a:ProgramID i:nil="true" />
+                        <a:ProgramName>Dent + Paint/Fabric Platinum</a:ProgramName>
+                        <a:SuggestedRetailPrice>324</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>72</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType>
+                        <a:ComboID>171</a:ComboID>
+                        <a:DealerCost>229</a:DealerCost>
+                        <a:DealerRemit>189</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>PSSGPXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>C171</a:PlanID>
+                        <a:ProductLine>PAINT/FABRIC</a:ProductLine>
+                        <a:ProgramFullName>PDR LTD 250+POLY-PLATINUM</a:ProgramFullName><a:ProgramID i:nil="true" />
+                        <a:ProgramName>Dent + Paint/Fabric Platinum</a:ProgramName>
+                        <a:SuggestedRetailPrice>324</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>72</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType>
+                        <a:ComboID>171</a:ComboID>
+                        <a:DealerCost>229</a:DealerCost>
+                        <a:DealerRemit>189</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>PSSGPXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>C171</a:PlanID>
+                        <a:ProductLine>PAINT/FABRIC</a:ProductLine>
+                        <a:ProgramFullName>PDR LTD 250+POLY-PLATINUM</a:ProgramFullName><a:ProgramID i:nil="true" />
+                        <a:ProgramName>Dent + Paint/Fabric Platinum</a:ProgramName>
+                        <a:SuggestedRetailPrice>324</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>72</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType>
+                        <a:ComboID>171</a:ComboID>
+                        <a:DealerCost>229</a:DealerCost>
+                        <a:DealerRemit>189</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>PSSGPXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>C171</a:PlanID>
+                        <a:ProductLine>PAINT/FABRIC</a:ProductLine>
+                        <a:ProgramFullName>PDR LTD 250+POLY-PLATINUM</a:ProgramFullName><a:ProgramID i:nil="true" />
+                        <a:ProgramName>Dent + Paint/Fabric Platinum</a:ProgramName>
+                        <a:SuggestedRetailPrice>324</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>72</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>174</a:DealerCost>
+                        <a:DealerRemit>134</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>PSSGPXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P851</a:PlanID>
+                        <a:ProductLine>PAINT/FABRIC</a:ProductLine>
+                        <a:ProgramFullName>POLY-GOLD</a:ProgramFullName>
+                        <a:ProgramID>851</a:ProgramID>
+                        <a:ProgramName>Paint/Fabric Gold</a:ProgramName>
+                        <a:SuggestedRetailPrice>274</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>72</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>174</a:DealerCost>
+                        <a:DealerRemit>134</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>PSSGPXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P851</a:PlanID>
+                        <a:ProductLine>PAINT/FABRIC</a:ProductLine>
+                        <a:ProgramFullName>POLY-GOLD</a:ProgramFullName>
+                        <a:ProgramID>851</a:ProgramID>
+                        <a:ProgramName>Paint/Fabric Gold</a:ProgramName>
+                        <a:SuggestedRetailPrice>274</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>72</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>174</a:DealerCost>
+                        <a:DealerRemit>134</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>PSSGPXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P851</a:PlanID>
+                        <a:ProductLine>PAINT/FABRIC</a:ProductLine>
+                        <a:ProgramFullName>POLY-GOLD</a:ProgramFullName>
+                        <a:ProgramID>851</a:ProgramID>
+                        <a:ProgramName>Paint/Fabric Gold</a:ProgramName>
+                        <a:SuggestedRetailPrice>274</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>72</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>174</a:DealerCost>
+                        <a:DealerRemit>134</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>PSSGPXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P851</a:PlanID>
+                        <a:ProductLine>PAINT/FABRIC</a:ProductLine>
+                        <a:ProgramFullName>POLY-GOLD</a:ProgramFullName>
+                        <a:ProgramID>851</a:ProgramID>
+                        <a:ProgramName>Paint/Fabric Gold</a:ProgramName>
+                        <a:SuggestedRetailPrice>274</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>72</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>174</a:DealerCost>
+                        <a:DealerRemit>134</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>PSSGPXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P851</a:PlanID>
+                        <a:ProductLine>PAINT/FABRIC</a:ProductLine>
+                        <a:ProgramFullName>POLY-GOLD</a:ProgramFullName>
+                        <a:ProgramID>851</a:ProgramID>
+                        <a:ProgramName>Paint/Fabric Gold</a:ProgramName>
+                        <a:SuggestedRetailPrice>274</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>72</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>159</a:DealerCost>
+                        <a:DealerRemit>119</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>PSSGPXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P849</a:PlanID>
+                        <a:ProductLine>PAINT/FABRIC</a:ProductLine>
+                        <a:ProgramFullName>POLY-SILVER</a:ProgramFullName>
+                        <a:ProgramID>849</a:ProgramID>
+                        <a:ProgramName>Paint/Fabric Silver</a:ProgramName>
+                        <a:SuggestedRetailPrice>259</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>72</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>159</a:DealerCost>
+                        <a:DealerRemit>119</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>PSSGPXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P849</a:PlanID>
+                        <a:ProductLine>PAINT/FABRIC</a:ProductLine>
+                        <a:ProgramFullName>POLY-SILVER</a:ProgramFullName>
+                        <a:ProgramID>849</a:ProgramID>
+                        <a:ProgramName>Paint/Fabric Silver</a:ProgramName>
+                        <a:SuggestedRetailPrice>259</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>72</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>159</a:DealerCost>
+                        <a:DealerRemit>119</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>PSSGPXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P849</a:PlanID>
+                        <a:ProductLine>PAINT/FABRIC</a:ProductLine>
+                        <a:ProgramFullName>POLY-SILVER</a:ProgramFullName>
+                        <a:ProgramID>849</a:ProgramID>
+                        <a:ProgramName>Paint/Fabric Silver</a:ProgramName>
+                        <a:SuggestedRetailPrice>259</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>72</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>159</a:DealerCost>
+                        <a:DealerRemit>119</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>PSSGPXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P849</a:PlanID>
+                        <a:ProductLine>PAINT/FABRIC</a:ProductLine>
+                        <a:ProgramFullName>POLY-SILVER</a:ProgramFullName>
+                        <a:ProgramID>849</a:ProgramID>
+                        <a:ProgramName>Paint/Fabric Silver</a:ProgramName>
+                        <a:SuggestedRetailPrice>259</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>72</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>159</a:DealerCost>
+                        <a:DealerRemit>119</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>PSSGPXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P849</a:PlanID>
+                        <a:ProductLine>PAINT/FABRIC</a:ProductLine>
+                        <a:ProgramFullName>POLY-SILVER</a:ProgramFullName>
+                        <a:ProgramID>849</a:ProgramID>
+                        <a:ProgramName>Paint/Fabric Silver</a:ProgramName>
+                        <a:SuggestedRetailPrice>259</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>72</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>397.75</a:DealerCost>
+                        <a:DealerRemit>397.75</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>TAP1G</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" />
+                        <a:MaxLoanTerm>72</a:MaxLoanTerm><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" />
+                        <a:MinLoanTerm>48</a:MinLoanTerm><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P4568</a:PlanID>
+                        <a:ProductLine>TAP</a:ProductLine>
+                        <a:ProgramFullName>TAP 1000 USED 48 AS G_50%</a:ProgramFullName>
+                        <a:ProgramID>4568</a:ProgramID>
+                        <a:ProgramName>TAP 1000 Giveaway Used 50%</a:ProgramName>
+                        <a:SuggestedRetailPrice>699</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" /><a:TermMonths i:nil="true" /></a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>397.75</a:DealerCost>
+                        <a:DealerRemit>397.75</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>TAP1G</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" />
+                        <a:MaxLoanTerm>72</a:MaxLoanTerm><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" />
+                        <a:MinLoanTerm>48</a:MinLoanTerm><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P4569</a:PlanID>
+                        <a:ProductLine>TAP</a:ProductLine>
+                        <a:ProgramFullName>TAP 1000 USED 48 AS G_66%</a:ProgramFullName>
+                        <a:ProgramID>4569</a:ProgramID>
+                        <a:ProgramName>TAP 1000 Giveaway Used 66%</a:ProgramName>
+                        <a:SuggestedRetailPrice>699</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" /><a:TermMonths i:nil="true" /></a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>397.75</a:DealerCost>
+                        <a:DealerRemit>397.75</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>TAP1G</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" />
+                        <a:MaxLoanTerm>72</a:MaxLoanTerm><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" />
+                        <a:MinLoanTerm>48</a:MinLoanTerm><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P4580</a:PlanID>
+                        <a:ProductLine>TAP</a:ProductLine>
+                        <a:ProgramFullName>TAP 1000 USED 48 AS P_50%</a:ProgramFullName>
+                        <a:ProgramID>4580</a:ProgramID>
+                        <a:ProgramName>TAP 1000 Purchase Used 50%</a:ProgramName>
+                        <a:SuggestedRetailPrice>699</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" /><a:TermMonths i:nil="true" /></a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>397.75</a:DealerCost>
+                        <a:DealerRemit>397.75</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>TAP1G</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" />
+                        <a:MaxLoanTerm>72</a:MaxLoanTerm><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" />
+                        <a:MinLoanTerm>48</a:MinLoanTerm><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P4581</a:PlanID>
+                        <a:ProductLine>TAP</a:ProductLine>
+                        <a:ProgramFullName>TAP 1000 USED 48 AS P_66%</a:ProgramFullName>
+                        <a:ProgramID>4581</a:ProgramID>
+                        <a:ProgramName>TAP 1000 Purchase Used 66%</a:ProgramName>
+                        <a:SuggestedRetailPrice>699</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" /><a:TermMonths i:nil="true" /></a:Common.RateType>
+                    <a:Common.RateType>
+                        <a:ComboID>1184</a:ComboID>
+                        <a:DealerCost>50</a:DealerCost>
+                        <a:DealerRemit>50</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>CA6STRXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>C1184</a:PlanID>
+                        <a:ProductLine>THEFT</a:ProductLine>
+                        <a:ProgramFullName>1STAR-GPS+ETCH1000/1YR</a:ProgramFullName><a:ProgramID i:nil="true" />
+                        <a:ProgramName>1STAR-GPS + Theft 1000</a:ProgramName>
+                        <a:SuggestedRetailPrice>199</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>12</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType>
+                        <a:ComboID>1185</a:ComboID>
+                        <a:DealerCost>100</a:DealerCost>
+                        <a:DealerRemit>100</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>CA6STRXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>C1185</a:PlanID>
+                        <a:ProductLine>THEFT</a:ProductLine>
+                        <a:ProgramFullName>1STAR-GPS+ETCH2500/5YR</a:ProgramFullName><a:ProgramID i:nil="true" />
+                        <a:ProgramName>1STAR-GPS + Theft 2500</a:ProgramName>
+                        <a:SuggestedRetailPrice>249</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>60</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>0</a:DealerCost>
+                        <a:DealerRemit>0</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>CA6STRXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P333</a:PlanID>
+                        <a:ProductLine>THEFT</a:ProductLine>
+                        <a:ProgramFullName>ETCH1000/1YR</a:ProgramFullName>
+                        <a:ProgramID>333</a:ProgramID>
+                        <a:ProgramName>Theft 1000</a:ProgramName>
+                        <a:SuggestedRetailPrice>149</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>12</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>50</a:DealerCost>
+                        <a:DealerRemit>50</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>CA6STRXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P133</a:PlanID>
+                        <a:ProductLine>THEFT</a:ProductLine>
+                        <a:ProgramFullName>ETCH2500/5YR</a:ProgramFullName>
+                        <a:ProgramID>133</a:ProgramID>
+                        <a:ProgramName>Theft 2500</a:ProgramName>
+                        <a:SuggestedRetailPrice>199</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>60</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>150</a:DealerCost>
+                        <a:DealerRemit>50</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>E25</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P4322</a:PlanID>
+                        <a:ProductLine>THEFT</a:ProductLine>
+                        <a:ProgramFullName>ETCH2500/500</a:ProgramFullName>
+                        <a:ProgramID>4322</a:ProgramID>
+                        <a:ProgramName>Theft 2500</a:ProgramName>
+                        <a:SuggestedRetailPrice>399</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" /><a:TermMonths i:nil="true" /></a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>150</a:DealerCost>
+                        <a:DealerRemit>50</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>E25GMXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P4322</a:PlanID>
+                        <a:ProductLine>THEFT</a:ProductLine>
+                        <a:ProgramFullName>ETCH2500/500</a:ProgramFullName>
+                        <a:ProgramID>4322</a:ProgramID>
+                        <a:ProgramName>Theft 2500 - GMAC/Ally</a:ProgramName>
+                        <a:SuggestedRetailPrice>0</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" /><a:TermMonths i:nil="true" /></a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>160</a:DealerCost>
+                        <a:DealerRemit>60</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>ISNB4N</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P16</a:PlanID>
+                        <a:ProductLine>THEFT</a:ProductLine>
+                        <a:ProgramFullName>ETCH3000/500</a:ProgramFullName>
+                        <a:ProgramID>16</a:ProgramID>
+                        <a:ProgramName>Theft 3000</a:ProgramName>
+                        <a:SuggestedRetailPrice>299</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" /><a:TermMonths i:nil="true" /></a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>160</a:DealerCost>
+                        <a:DealerRemit>60</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>ISNB4XX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P16</a:PlanID>
+                        <a:ProductLine>THEFT</a:ProductLine>
+                        <a:ProgramFullName>ETCH3000/500</a:ProgramFullName>
+                        <a:ProgramID>16</a:ProgramID>
+                        <a:ProgramName>Theft 3000</a:ProgramName>
+                        <a:SuggestedRetailPrice>299</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" /><a:TermMonths i:nil="true" /></a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>186.5</a:DealerCost>
+                        <a:DealerRemit>86.5</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>T50XX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P18</a:PlanID>
+                        <a:ProductLine>THEFT</a:ProductLine>
+                        <a:ProgramFullName>ETCH5000/1000</a:ProgramFullName>
+                        <a:ProgramID>18</a:ProgramID>
+                        <a:ProgramName>Theft 5000</a:ProgramName>
+                        <a:SuggestedRetailPrice>199</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" /><a:TermMonths i:nil="true" /></a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>209</a:DealerCost>
+                        <a:DealerRemit>209</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>IN1ACCXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P1347</a:PlanID>
+                        <a:ProductLine>TIRE/WHEEL</a:ProductLine>
+                        <a:ProgramFullName>INTIRE-CURB-GOLD-HP-1_5YR</a:ProgramFullName>
+                        <a:ProgramID>1347</a:ProgramID>
+                        <a:ProgramName>Tire/Wheel (Curb, Cosmetic)</a:ProgramName>
+                        <a:SuggestedRetailPrice>400</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>60</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>201</a:DealerCost>
+                        <a:DealerRemit>201</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>IN1ACCXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P1346</a:PlanID>
+                        <a:ProductLine>TIRE/WHEEL</a:ProductLine>
+                        <a:ProgramFullName>INTIRE-CURB-GOLD-HP-1_3YR</a:ProgramFullName>
+                        <a:ProgramID>1346</a:ProgramID>
+                        <a:ProgramName>Tire/Wheel (Curb, Cosmetic)</a:ProgramName>
+                        <a:SuggestedRetailPrice>400</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>36</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>140</a:DealerCost>
+                        <a:DealerRemit>140</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>IN1AXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P303</a:PlanID>
+                        <a:ProductLine>TIRE/WHEEL</a:ProductLine>
+                        <a:ProgramFullName>INTIRE-HP-1_5YR</a:ProgramFullName>
+                        <a:ProgramID>303</a:ProgramID>
+                        <a:ProgramName>Tire/Wheel</a:ProgramName>
+                        <a:SuggestedRetailPrice>359</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>60</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>130</a:DealerCost>
+                        <a:DealerRemit>130</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>IN1AXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P309</a:PlanID>
+                        <a:ProductLine>TIRE/WHEEL</a:ProductLine>
+                        <a:ProgramFullName>INTIRE-HP-1_3YR</a:ProgramFullName>
+                        <a:ProgramID>309</a:ProgramID>
+                        <a:ProgramName>Tire/Wheel</a:ProgramName>
+                        <a:SuggestedRetailPrice>356</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>36</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>140</a:DealerCost>
+                        <a:DealerRemit>140</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>IN1AXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P1162</a:PlanID>
+                        <a:ProductLine>TIRE/WHEEL</a:ProductLine>
+                        <a:ProgramFullName>INTIRE-GOLD-HP-1_5YR</a:ProgramFullName>
+                        <a:ProgramID>1162</a:ProgramID>
+                        <a:ProgramName>Tire/Wheel (Cosmetic)</a:ProgramName>
+                        <a:SuggestedRetailPrice>429</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>60</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>130</a:DealerCost>
+                        <a:DealerRemit>130</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>IN1AXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P1160</a:PlanID>
+                        <a:ProductLine>TIRE/WHEEL</a:ProductLine>
+                        <a:ProgramFullName>INTIRE-GOLD-HP-1_3YR</a:ProgramFullName>
+                        <a:ProgramID>1160</a:ProgramID>
+                        <a:ProgramName>Tire/Wheel (Cosmetic)</a:ProgramName>
+                        <a:SuggestedRetailPrice>426</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>36</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>0</a:DealerCost>
+                        <a:DealerRemit>0</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>CFR</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P2715</a:PlanID>
+                        <a:ProductLine>WINDSHIELD</a:ProductLine>
+                        <a:ProgramFullName>WIND REPEL CF_5YR</a:ProgramFullName>
+                        <a:ProgramID>2715</a:ProgramID>
+                        <a:ProgramName>Wind Repel</a:ProgramName>
+                        <a:SuggestedRetailPrice>0</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>60</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>0</a:DealerCost>
+                        <a:DealerRemit>0</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>CFRM</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P2818</a:PlanID>
+                        <a:ProductLine>WINDSHIELD</a:ProductLine>
+                        <a:ProgramFullName>WIND REPEL CFMT_1YR</a:ProgramFullName>
+                        <a:ProgramID>2818</a:ProgramID>
+                        <a:ProgramName>Wind Repel</a:ProgramName>
+                        <a:SuggestedRetailPrice>0</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>12</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>0</a:DealerCost>
+                        <a:DealerRemit>0</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>CFWR</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P2717</a:PlanID>
+                        <a:ProductLine>WINDSHIELD</a:ProductLine>
+                        <a:ProgramFullName>WIND REPAIR CF_5YR</a:ProgramFullName>
+                        <a:ProgramID>2717</a:ProgramID>
+                        <a:ProgramName>Wind Repair</a:ProgramName>
+                        <a:SuggestedRetailPrice>0</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>60</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>0</a:DealerCost>
+                        <a:DealerRemit>0</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>CFWR</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P2716</a:PlanID>
+                        <a:ProductLine>WINDSHIELD</a:ProductLine>
+                        <a:ProgramFullName>WIND REPAIR CF_3YR</a:ProgramFullName>
+                        <a:ProgramID>2716</a:ProgramID>
+                        <a:ProgramName>Wind Repair</a:ProgramName>
+                        <a:SuggestedRetailPrice>0</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>36</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>250</a:DealerCost>
+                        <a:DealerRemit>250</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>WRRPNCXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P976</a:PlanID>
+                        <a:ProductLine>WINDSHIELD</a:ProductLine>
+                        <a:ProgramFullName>WIND REPLACEMENT_LX_5YR</a:ProgramFullName>
+                        <a:ProgramID>976</a:ProgramID>
+                        <a:ProgramName>Wind Replacement</a:ProgramName>
+                        <a:SuggestedRetailPrice>495</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>60</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>240</a:DealerCost>
+                        <a:DealerRemit>240</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>WRRPNCXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P974</a:PlanID>
+                        <a:ProductLine>WINDSHIELD</a:ProductLine>
+                        <a:ProgramFullName>WIND REPLACEMENT_LX_3YR</a:ProgramFullName>
+                        <a:ProgramID>974</a:ProgramID>
+                        <a:ProgramName>Wind Replacement</a:ProgramName>
+                        <a:SuggestedRetailPrice>495</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>36</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>335</a:DealerCost>
+                        <a:DealerRemit>270</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>WRRPXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P976</a:PlanID>
+                        <a:ProductLine>WINDSHIELD</a:ProductLine>
+                        <a:ProgramFullName>WIND REPLACEMENT_LX_5YR</a:ProgramFullName>
+                        <a:ProgramID>976</a:ProgramID>
+                        <a:ProgramName>Wind Replacement</a:ProgramName>
+                        <a:SuggestedRetailPrice>399</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>60</a:TermMonths>
+                    </a:Common.RateType>
+                    <a:Common.RateType><a:ComboID i:nil="true" />
+                        <a:DealerCost>325</a:DealerCost>
+                        <a:DealerRemit>260</a:DealerRemit><a:DeductibleAmount i:nil="true" /><a:DeductibleType i:nil="true" />
+                        <a:Form>WRRPXX</a:Form>
+                        <a:LockedRetailPrice>false</a:LockedRetailPrice><a:MaxAmtFinanced i:nil="true" /><a:MaxLoanTerm i:nil="true" /><a:MaxMSRP i:nil="true" /><a:MaxVehiclePrice i:nil="true" /><a:MinAmtFinanced i:nil="true" /><a:MinLoanTerm i:nil="true" /><a:MinMSRP i:nil="true" /><a:MinVehiclePrice i:nil="true" />
+                        <a:PlanID>P974</a:PlanID>
+                        <a:ProductLine>WINDSHIELD</a:ProductLine>
+                        <a:ProgramFullName>WIND REPLACEMENT_LX_3YR</a:ProgramFullName>
+                        <a:ProgramID>974</a:ProgramID>
+                        <a:ProgramName>Wind Replacement</a:ProgramName>
+                        <a:SuggestedRetailPrice>399</a:SuggestedRetailPrice><a:Surcharges i:nil="true" /><a:TermMiles i:nil="true" />
+                        <a:TermMonths>36</a:TermMonths>
+                    </a:Common.RateType>
+                </a:Rates>
+            </GetRatesResult>
+        </GetRatesResponse>
+    </s:Body>
+</s:Envelope>
