@@ -1,7 +1,8 @@
 {
   "name": "ias",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A node client to interface with IAS soap web services",
+  "keywords": ["ias", "ias direct"],
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/istanbul cover --report html ./node_modules/.bin/_mocha -- -R spec && istanbul check-coverage"
