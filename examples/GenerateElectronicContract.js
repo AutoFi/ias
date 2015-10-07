@@ -13,10 +13,11 @@ var configs = require('./example.config.json');
 var loginName = 'TEST';
 var loginPassword = 'TEST';
 var dealerId = configs.dealerId;
+var env = 'test';
 var serviceMethod = 'GenerateElectronicContract';
 
 // fire up a client
-var client = new IAS.Client(loginName, loginPassword, dealerId);
+var client = new IAS.Client(loginName, loginPassword, dealerId, env);
 
 var data = {
 	authentication: {

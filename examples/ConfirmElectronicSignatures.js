@@ -14,15 +14,19 @@ var serviceMethod = 'ConfirmElectronicSignatures';
 var loginName = 'TEST';
 var loginPassword = 'TEST';
 var dealerId = configs.dealerId;
+var env = 'test';
 
-var pendingContractId = '684043';
+
+// change this value to the pendingContractId you receive after a 
+// call to the GenerateElectronicContract method
+var pendingContractId = '683496';
 
 
 
 
 
 // fire up a client
-var client = new IAS.Client(loginName, loginPassword, dealerId);
+var client = new IAS.Client(loginName, loginPassword, dealerId, env);
 
 
 // get base data structure

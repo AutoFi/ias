@@ -17,13 +17,14 @@ var IAS = require('ias');
 var loginName = process.env.IAS_LOGINNAME;
 var loginPassword = process.env.IAS_LOGINPASSWORD;
 var dealerId = process.env.IAS_DEALERID;
+var env = 'test';
 
 // which service method
 // serviceMethods are CaSe SenSitIve
 var serviceMethod = 'GetPendingElectronicContracts';
 
 // create the client
-var client = new IAS.Client(loginName, loginPassword, dealerId);
+var client = new IAS.Client(loginName, loginPassword, dealerId, env);
 
 // retrieve data
 client.getData(serviceMethod, function pendingContractsHandler(err, result) {
@@ -51,6 +52,8 @@ client.getData(serviceMethod, function pendingContractsHandler(err, result) {
 ### GetElectronicContractFormFields
 
 ### GetPendingElectronicContracts
+
+this is setup in the client but is not currently supported by IAS
 
 ## Limitations
 
