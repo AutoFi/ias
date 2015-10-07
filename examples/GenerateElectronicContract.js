@@ -1,7 +1,7 @@
 /*
 
 	Examples of using IAS client
-	ServiceMethod: GetRates
+	ServiceMethod: GenerateElectronicContract
 
  */
 var fs = require('fs');
@@ -30,7 +30,7 @@ var data = {
 	customerInfo: {
 		apr: '0.12',
 		additionalPayee: 'false',
-		aftermarketHardwareInstallationDate: '2015-10-07',
+		aftermarketHardwareInstallationDate: '',
 		aftermarketHardwareRetailPrice: '0.0',
 		aftermarketHardwareSerialNumber: '',
 		amountFinanced: '20000',
@@ -60,7 +60,7 @@ var data = {
 			zip: ''
 		},
 		contractDate: '2015-10-07',
-		dealNumber: '',
+		dealNumber: 'INTERNALID-' + new Date().getTime(),
 		etchNumber: '',
 		firstPaymentDate: '2015-11-07',
 		lenderDescriptor: {
@@ -124,18 +124,19 @@ console.log('Starting ' + serviceMethod + ' service call...');
 client.getData(serviceMethod, data, function(err, result) {
 	if (err) {
 		console.log('ERROR: ' + err);
+	} else {
+		console.log('Received ' + result.contractFiles.length + ' file(s)');
+
+		for (var i = 0; i < result.contractFiles.length; i++) {
+			var file = result.contractFiles[i];
+			var name = '_' + file.name;
+			console.log('writing out ' + name + ' to disk');
+			console.log('ContractId: ' + file.contractId);
+			
+			fs.writeFileSync(name, file.data, 'base64');
+			
+		}
 	}
 
-	console.log('Received ' + result.contractFiles.length + ' file(s)');
-
-	for (var i = 0; i < result.contractFiles.length; i++) {
-		var file = result.contractFiles[i];
-		var name = '_' + file.name;
-		console.log('writing out ' + name + ' to disk');
-		console.log('ContractId: ' + file.contractId);
-		
-		fs.writeFileSync(name, file.data, 'base64');
-		
-	}
 	console.log('DONE with ' + serviceMethod + ' in ' + (new Date().getTime() - start) + 'ms');
 });

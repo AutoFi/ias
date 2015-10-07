@@ -1,0 +1,26 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:elec="https://api.iasdirect.com/ElectronicProcessing" xmlns:ias="http://schemas.datacontract.org/2004/07/IAS">
+   <soapenv:Header/>
+   <soapenv:Body>
+	  <elec:GetPendingElectronicContracts>
+		 <elec:request>
+			<ias:Authentication>
+				<ias:LoginName>{{authentication.loginName}}</ias:LoginName>
+				<ias:LoginPassword>{{authentication.loginPassword}}</ias:LoginPassword>
+				{{#authentication.userAgent}}
+					<ias:UserAgent>{{authentication.userAgent}}</ias:UserAgent>
+				{{/authentication.userAgent}}
+				{{#authentication.userEmailAddress}}
+					<ias:UserEmailAddress>{{authentication.userEmailAddress}}</ias:UserEmailAddress>
+				{{/authentication.userEmailAddress}}
+				{{#authentication.userId}}
+					<ias:UserID>{{authentication.userId}}</ias:UserID>
+				{{/authentication.userId}}
+				{{#authentication.userIPAddress}}
+					<ias:UserIPAddress>{{authentication.userIPAddress}}</ias:UserIPAddress>
+				{{/authentication.userIPAddress}}
+			</ias:Authentication>
+			<ias:DealerID>{{dealerId}}</ias:DealerID>
+		 </elec:request>
+	  </elec:GetPendingElectronicContracts>
+   </soapenv:Body>
+</soapenv:Envelope>

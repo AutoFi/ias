@@ -17,7 +17,7 @@ describe('normalize.js', function() {
 		var n = 0;
 		function finish() {
 			n++;
-			if (n === 4) {
+			if (n === 5) {
 				done();
 			}
 
@@ -50,14 +50,14 @@ describe('normalize.js', function() {
 		});
 	});
 
-	it('should have 5 functions', function() {
+	it('should have 6 functions', function() {
 		var a = 0;
 		Object.keys(normalize).forEach(function(v) {
 			if (typeof normalize[v] === 'function') {
 				a++;
 			}
 		});
-		assert.equal(a, 5);
+		assert.equal(a, 6);
 	});
 
 	describe('.GetRates', function() {
@@ -151,6 +151,29 @@ describe('normalize.js', function() {
 			assert.equal(typeof a, 'object', 'is object');
 			assert.equal(a.success, false, '.success');
 			
+		});
+	});
+
+
+	describe('.GetPendingElectronicContracts', function() {
+		var xmljs;
+		before(function(done) {
+			var xml = fs.readFileSync(path.resolve(__dirname, 'data/data.ias.xml.GetPendingElectronicContracts.xml'));
+			xml2js.parseString(xml.toString(), function(err, data) {
+				xmljs = data;
+				done();
+			});
+		});
+		it('should return valid array', function() {
+			var a = normalize.GetPendingElectronicContracts(xmljs);
+			assert.equal(typeof a, 'object', 'is object');
+			assert.equal(Object.keys(a).length, 1, 'keys not 1');
+			assert.equal(a.contractFiles.length, 1, '.contractFiles');
+		});
+
+		it('should return null with bad data', function() {
+			var a = normalize.GetPendingElectronicContracts({});
+			assert.equal(a, null);
 		});
 	});
 
