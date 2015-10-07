@@ -97,7 +97,9 @@
 					<!--Optional:-->
 					<ias:DealNumber>{{customerInfo.dealNumber}}</ias:DealNumber>
 					<!--Optional:-->
+					{{#customerInfo.etchNumber}}
 					<ias:EtchNumber>{{customerInfo.etchNumber}}</ias:EtchNumber>
+					{{/customerInfo.etchNumber}}
 					<!--Optional:-->
 					<ias:FirstPaymentDate>{{customerInfo.firstPaymentDate}}</ias:FirstPaymentDate>
 					<!--Optional:-->
@@ -116,7 +118,9 @@
 						<ias:Zip>{{customerInfo.lenderDescriptor.zip}}</ias:Zip>
 					</ias:LenderDescriptor>
 					<!--Optional:-->
+					{{#customerInfo.licensedSalesperson}}
 					<ias:LicensedSalesperson>{{customerInfo.licensedSalesperson}}</ias:LicensedSalesperson>
+					{{/customerInfo.licensedSalesperson}}
 					<!--Optional:-->
 					{{#customerInfo.maintenanceKitShipmentType}}
 					<ias:MaintenanceKitShipmentType>{{customerInfo.maintenanceKitShipmentType}}</ias:MaintenanceKitShipmentType>
@@ -138,28 +142,44 @@
 					<ias:TotalOfPayments>{{customerInfo.totalOfPayments}}</ias:TotalOfPayments>
 					{{/customerInfo.totalOfPayments}}
 					<!--Optional:-->
-					<!-- <ias:VSCCompany>{{customerInfo.vscCompany}}</ias:VSCCompany> -->
+					{{#customerInfo.vscCompany}}
+					<ias:VSCCompany>{{customerInfo.vscCompany}}</ias:VSCCompany>
+					{{/customerInfo.vscCompany}}
 					<!--Optional:-->
-					<!-- <ias:VSCNumber>{{customerInfo.vscNumber}}</ias:VSCNumber> -->
+					{{#customerInfo.vscNumber}}
+					<ias:VSCNumber>{{customerInfo.vscNumber}}</ias:VSCNumber>
+					{{/customerInfo.vscNumber}}
 					<!--Optional:-->
-					<!-- <ias:VSCTermMiles>{{customerInfo.vscTermMiles}}</ias:VSCTermMiles> -->
+					{{#customerInfo.vscTermMiles}}
+					<ias:VSCTermMiles>{{customerInfo.vscTermMiles}}</ias:VSCTermMiles>
+					{{/customerInfo.vscTermMiles}}
 					<!--Optional:-->
-					<!-- <ias:VSCTermMonths>{{customerInfo.vscTermMonths}}</ias:VSCTermMonths> -->
+					{{#customerInfo.vscTermMonths}}
+					<ias:VSCTermMonths>{{customerInfo.vscTermMonths}}</ias:VSCTermMonths>
+					{{/customerInfo.vscTermMonths}}
 					<!--Optional:-->
-					<!-- <ias:VehicleLoanType>{{customerInfo.vehicleLoanType}}</ias:VehicleLoanType> -->
+					{{#customerInfo.vehicleLoanType}}
+					<ias:VehicleLoanType>{{customerInfo.vehicleLoanType}}</ias:VehicleLoanType>
+					{{/customerInfo.vehicleLoanType}}
 					<!--Optional:-->
-					<!-- <ias:VehiclePurchaseType>{{customerInfo.vehiclePurchaseType}}</ias:VehiclePurchaseType> -->
+					{{#customerInfo.vehiclePurchaseType}}
+					<ias:VehiclePurchaseType>{{customerInfo.vehiclePurchaseType}}</ias:VehiclePurchaseType>
+					{{/customerInfo.vehiclePurchaseType}}
 				</ias:CustomerInfo>
 				<!--Optional:-->
 				<ias:DealerID>{{dealerId}}</ias:DealerID>
 				<!--Optional:-->
+				{{#masterDealerId}}
 				<ias:MasterDealerID>{{masterDealerId}}</ias:MasterDealerID>
+				{{/masterDealerId}}
 				<ias:PurchasedPlans>
 					<!--Zero or more repetitions:-->
 					{{#purchasedPlans}}
 						<ias:IElectronicProcessing.PurchasedPlanType>
 							<!--Optional:-->
+							{{#fiCodeNumber}}
 							<ias:FICodeNumber>{{fiCodeNumber}}</ias:FICodeNumber>
+							{{/fiCodeNumber}}
 							<ias:Form>{{form}}</ias:Form>
 							<!--Optional:-->
 							<!-- <ias:FormRevisionDate>{{formRevisionDate}}</ias:FormRevisionDate> -->
@@ -167,7 +187,9 @@
 							<ias:PlanID>{{planId}}</ias:PlanID>
 							<ias:RetailPrice>{{retailPrice}}</ias:RetailPrice>
 							<!--Optional:-->
+							{{#term}}
 							<ias:Term>{{term}}</ias:Term>
+							{{/term}}
 						</ias:IElectronicProcessing.PurchasedPlanType>
 					{{/purchasedPlans}}
 				</ias:PurchasedPlans>
