@@ -1,0 +1,22 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:elec="https://api.iasdirect.com/ElectronicProcessing" xmlns:ias="http://schemas.datacontract.org/2004/07/IAS" xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <elec:GetElectronicContractFormSignatureLocations>
+         <elec:request>
+            <ias:Authentication>
+               <ias:LoginName>{{authentication.loginName}}</ias:LoginName>
+               <ias:LoginPassword>{{authentication.loginPassword}}</ias:LoginPassword>
+               <ias:UserAgent>{{authentication.userAgent}}</ias:UserAgent>
+               <ias:UserEmailAddress>{{authentication.userEmailAddress}}</ias:UserEmailAddress>
+               <ias:UserID>{{authentication.userId}}</ias:UserID>
+               <ias:UserIPAddress>{{authentication.userIPAddress}}</ias:UserIPAddress>
+            </ias:Authentication>
+            <ias:Forms>
+               {{#forms}}
+               <arr:string>{{.}}</arr:string>
+               {{/forms}}
+            </ias:Forms>
+         </elec:request>
+      </elec:GetElectronicContractFormSignatureLocations>
+   </soapenv:Body>
+</soapenv:Envelope>

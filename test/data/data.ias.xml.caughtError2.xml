@@ -3,7 +3,6 @@
 		<GetElectronicContractFormFieldsResponse xmlns="https://api.iasdirect.com/ElectronicProcessing">
 			<GetElectronicContractFormFieldsResult xmlns:a="http://schemas.datacontract.org/2004/07/IAS" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
 				<a:ErrorInfo>
-					<a:ErrorDescription>Invalid login credentials.</a:ErrorDescription>
 					<a:ErrorOccurred>true</a:ErrorOccurred>
 				</a:ErrorInfo><a:FormFieldsListings i:nil="true" /></GetElectronicContractFormFieldsResult>
 		</GetElectronicContractFormFieldsResponse>

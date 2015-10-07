@@ -9,8 +9,9 @@ var request = require('request');
 describe('client.js', function() {
 	var Client;
 	var getRatesXml;
+
 	before(function() {
-		Client = require('../lib/client', {bust: true, keep: false});
+		Client = require('../lib/client', {bust: true, keep: false}).Client;
 	});
 
 	describe('constructor', function() {
@@ -30,15 +31,15 @@ describe('client.js', function() {
 
 
 
-	describe('getData', function() {
-		it('should fail with unsupported serviceMethod', function(done) {
-			var client = new Client('ln','pw','d');
-			client.getData('ASDFASDFASDFASDF', {}, function(err) {
-				assert.equal(err, 'Service method not supported');
-				done();
-			});
-		});		
-	});
+	// describe('getData', function() {
+	// 	it('should fail with unsupported serviceMethod', function(done) {
+	// 		var client = new Client('ln','pw','d');
+	// 		client.getData('ASDFASDFASDFASDF', {}, function(err) {
+	// 			assert.equal(err, 'Service method not supported');
+	// 			done();
+	// 		});
+	// 	});		
+	// });
 
 	describe('getData', function() {
 		it('should fail with unsupported serviceMethod', function(done) {
@@ -57,7 +58,7 @@ describe('client.js', function() {
 		});		
 	});
 
-	describe('getData with bad http.statusCode', function() {
+	describe('getData with bad http.statusCode no body', function() {
 		before(function() {
 			sinon.stub(request, 'post')
 				.yields(null, {statusCode: 500}, '');
@@ -75,6 +76,85 @@ describe('client.js', function() {
 		});
 	});
 
+	describe('getData with bad http.statusCode with body but no faultstring', function() {
+		before(function() {
+			sinon.stub(request, 'post')
+				.yields(null, {statusCode: 500}, '<a></a>');
+		});
+		it('should fail', function(done) {
+			var client = new Client('name', 'password', '');
+			client.getData('GetElectronicContractFormFields', {}, function(err, data) {
+				assert.equal(err, 'Invalid http statusCode returned (not 200) 500');
+				done();
+			});
+		});
+
+		after(function() {
+			request.post.restore();
+		});
+	});
+
+
+	describe('getData with IAS fault returned', function() {
+		before(function() {
+			sinon.stub(request, 'post')
+				.yields(null, {statusCode: 500}, '<a><b><faultstring>There was a fault</faultstring></b></a>');
+		});
+		it('should fail', function(done) {
+			var client = new Client('name', 'password', '');
+			client.getData('GetElectronicContractFormFields', {}, function(err, data) {
+				assert.equal(err, 'There was a fault');
+				done();
+			});
+		});
+
+		after(function() {
+			request.post.restore();
+		});
+	});
+
+
+	describe('getData with IAS returned handled error', function() {
+		var xml;
+		before(function() {
+			xml = fs.readFileSync(__dirname + '/data/data.ias.xml.caughtError.xml');
+			sinon.stub(request, 'post')
+				.yields(null, {statusCode: 200}, xml);
+		});
+
+		it('should fail', function(done) {
+			var client = new Client('name', 'password', '');
+			client.getData('GetElectronicContractFormFields', {}, function(err, data) {
+				assert.equal(err, 'Invalid login credentials.');
+				done();
+			});
+		});
+
+		after(function() {
+			request.post.restore();
+		});
+	});
+
+	describe('getData with IAS returned handled error with no description', function() {
+		var xml;
+		before(function() {
+			xml = fs.readFileSync(__dirname + '/data/data.ias.xml.caughtError2.xml');
+			sinon.stub(request, 'post')
+				.yields(null, {statusCode: 200}, xml);
+		});
+
+		it('should fail', function(done) {
+			var client = new Client('name', 'password', '');
+			client.getData('GetElectronicContractFormFields', {}, function(err, data) {
+				assert.equal(err, 'ErrorOccurred was returned from server, but no description.');
+				done();
+			});
+		});
+
+		after(function() {
+			request.post.restore();
+		});
+	});
 
 	describe('getData with unsupported xml structure', function() {
 		before(function() {
@@ -129,6 +209,57 @@ describe('client.js', function() {
 		it('should be successful', function(done) {
 			var client = new Client('name', 'password', 'dealerid');
 			client.getData('GetRates', {}, function(err, data) {
+				if (err) {
+					console.log(err);
+				}
+				assert(!err);
+				done();
+			});
+		});
+		
+		after(function() {
+			request.post.restore();
+		});
+	});
+
+	describe('GenerateElectronicContract', function() {
+		var xml;
+		before(function() {
+			xml = fs.readFileSync(__dirname + '/data/data.ias.xml.GenerateElectronicContract.xml');
+			sinon.stub(request, 'post')
+				.yields(null, {statusCode: 200}, xml);
+		});
+
+		it('should be successful', function(done) {
+			var client = new Client('name', 'password', 'dealerid');
+			client.getData('GenerateElectronicContract', {}, function(err, data) {
+				if (err) {
+					console.log(err);
+				}
+				assert(!err);
+				assert.equal(data.contractFiles.length, 1, '.contractFiles len');
+				assert.equal(data.contractFiles[0].contractId, '683723', 'contractId');
+				done();
+			});
+		});
+		
+		after(function() {
+			request.post.restore();
+		});
+	});
+
+
+	describe('GetElectronicContractFormSignatureLocations', function() {
+		var xml;
+		before(function() {
+			xml = fs.readFileSync(__dirname + '/data/data.ias.xml.GetElectronicContractFormSignatureLocations.xml');
+			sinon.stub(request, 'post')
+				.yields(null, {statusCode: 200}, xml);
+		});
+
+		it('should be successful', function(done) {
+			var client = new Client('name', 'password', 'dealerid');
+			client.getData('GetElectronicContractFormSignatureLocations', {}, function(err, data) {
 				if (err) {
 					console.log(err);
 				}

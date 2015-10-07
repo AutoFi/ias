@@ -1,0 +1,44 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+   <s:Body>
+      <GetElectronicContractFormSignatureLocationsResponse xmlns="https://api.iasdirect.com/ElectronicProcessing">
+         <GetElectronicContractFormSignatureLocationsResult xmlns:a="http://schemas.datacontract.org/2004/07/IAS" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <a:ErrorInfo>
+               <a:ErrorDescription>Success</a:ErrorDescription>
+               <a:ErrorOccurred>false</a:ErrorOccurred>
+            </a:ErrorInfo>
+            <a:FormSignatureLocations>
+               <a:IElectronicProcessing.FormSignatureLocationType>
+                  <a:BuyerSignatureBottom>139</a:BuyerSignatureBottom>
+                  <a:BuyerSignatureLeft>141</a:BuyerSignatureLeft>
+                  <a:BuyerSignatureRight>294</a:BuyerSignatureRight>
+                  <a:BuyerSignatureTop>156</a:BuyerSignatureTop>
+                  <a:CobuyerSignatureBottom>-1</a:CobuyerSignatureBottom>
+                  <a:CobuyerSignatureLeft>-1</a:CobuyerSignatureLeft>
+                  <a:CobuyerSignatureRight>-1</a:CobuyerSignatureRight>
+                  <a:CobuyerSignatureTop>-1</a:CobuyerSignatureTop>
+                  <a:DealerSignatureBottom>139</a:DealerSignatureBottom>
+                  <a:DealerSignatureLeft>430</a:DealerSignatureLeft>
+                  <a:DealerSignatureRight>588</a:DealerSignatureRight>
+                  <a:DealerSignatureTop>156</a:DealerSignatureTop>
+                  <a:Form>G1GMP</a:Form>
+               </a:IElectronicProcessing.FormSignatureLocationType>
+               <a:IElectronicProcessing.FormSignatureLocationType>
+                  <a:BuyerSignatureBottom>84</a:BuyerSignatureBottom>
+                  <a:BuyerSignatureLeft>43</a:BuyerSignatureLeft>
+                  <a:BuyerSignatureRight>214</a:BuyerSignatureRight>
+                  <a:BuyerSignatureTop>101</a:BuyerSignatureTop>
+                  <a:CobuyerSignatureBottom>-1</a:CobuyerSignatureBottom>
+                  <a:CobuyerSignatureLeft>-1</a:CobuyerSignatureLeft>
+                  <a:CobuyerSignatureRight>-1</a:CobuyerSignatureRight>
+                  <a:CobuyerSignatureTop>-1</a:CobuyerSignatureTop>
+                  <a:DealerSignatureBottom>85</a:DealerSignatureBottom>
+                  <a:DealerSignatureLeft>318</a:DealerSignatureLeft>
+                  <a:DealerSignatureRight>489</a:DealerSignatureRight>
+                  <a:DealerSignatureTop>102</a:DealerSignatureTop>
+                  <a:Form>IN1ACCXX</a:Form>
+               </a:IElectronicProcessing.FormSignatureLocationType>
+            </a:FormSignatureLocations>
+         </GetElectronicContractFormSignatureLocationsResult>
+      </GetElectronicContractFormSignatureLocationsResponse>
+   </s:Body>
+</s:Envelope>

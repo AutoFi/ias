@@ -1,20 +1,26 @@
 {
   "name": "ias",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A node client to interface with IAS soap web services",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/istanbul cover --report html ./node_modules/.bin/_mocha -- -R spec && istanbul check-coverage"
   },
-  "author": "Chris Trailer",
+  "author": "Chris Trailer <chris@autofi.io>",
   "license": "ISC",
+  "repository" : {
+    "type": "git", 
+    "url": "https://github.com/AutoFi/ias"
+  },
   "devDependencies": {
+    "istanbul": "^0.3.22",
     "mocha": "^2.3.3",
     "really-need": "^1.6.3",
     "sinon": "^1.17.1"
   },
   "dependencies": {
     "async": "^1.4.2",
+    "debug": "^2.2.0",
     "lodash": "^3.10.1",
     "mustache": "^2.1.3",
     "request": "^2.64.0",

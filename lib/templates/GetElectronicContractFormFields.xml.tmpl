@@ -6,12 +6,12 @@
 			<!--Optional:-->
 			<elec:request>
 				<ias:Authentication>
-					<ias:LoginName>{{auth.loginName}}</ias:LoginName>
-					<ias:LoginPassword>{{auth.loginPassword}}</ias:LoginPassword>
-					<ias:UserAgent>{{auth.userAgent}}</ias:UserAgent>
-					<ias:UserEmailAddress>{{auth.userEmailAddress}}</ias:UserEmailAddress>
-					<ias:UserID>{{auth.userId}}</ias:UserID>
-					<ias:UserIPAddress>{{auth.userIPAddress}}</ias:UserIPAddress>
+					<ias:LoginName>{{authentication.loginName}}</ias:LoginName>
+					<ias:LoginPassword>{{authentication.loginPassword}}</ias:LoginPassword>
+					<ias:UserAgent>{{authentication.userAgent}}</ias:UserAgent>
+					<ias:UserEmailAddress>{{authentication.userEmailAddress}}</ias:UserEmailAddress>
+					<ias:UserID>{{authentication.userId}}</ias:UserID>
+					<ias:UserIPAddress>{{authentication.userIPAddress}}</ias:UserIPAddress>
 				</ias:Authentication>
 				<ias:Forms>
 					{{#forms}}
@@ -22,3 +22,4 @@
 		</elec:GetElectronicContractFormFields>
 	</soapenv:Body>
 </soapenv:Envelope>
+
