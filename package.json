@@ -1,6 +1,6 @@
 {
   "name": "ias",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A node client to interface with IAS soap web services",
   "keywords": ["ias", "ias direct"],
   "main": "index.js",
