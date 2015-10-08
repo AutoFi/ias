@@ -45,7 +45,7 @@ describe('client.js', function() {
 		it('should fail with unsupported serviceMethod', function(done) {
 			var client = new Client('ln','pw','d');
 			client.getData('ASDFASDFASDFASDF', {}, function(err) {
-				assert.equal(err, 'Service method not supported');
+				assert.equal(err.message, 'Service method not supported');
 				done();
 			});
 		});
@@ -66,7 +66,7 @@ describe('client.js', function() {
 		it('should fail', function(done) {
 			var client = new Client('name', 'password', '');
 			client.getData('GetElectronicContractFormFields', {}, function(err, data) {
-				assert.equal(err, 'Invalid http statusCode returned (not 200) 500');
+				assert.equal(err.message, 'Invalid http statusCode returned (not 200) 500');
 				done();
 			});
 		});
@@ -84,7 +84,7 @@ describe('client.js', function() {
 		it('should fail', function(done) {
 			var client = new Client('name', 'password', '');
 			client.getData('GetElectronicContractFormFields', {}, function(err, data) {
-				assert.equal(err, 'Invalid http statusCode returned (not 200) 500');
+				assert.equal(err.message, 'Invalid http statusCode returned (not 200) 500');
 				done();
 			});
 		});
@@ -103,7 +103,7 @@ describe('client.js', function() {
 		it('should fail', function(done) {
 			var client = new Client('name', 'password', '');
 			client.getData('GetElectronicContractFormFields', {}, function(err, data) {
-				assert.equal(err, 'There was a fault');
+				assert.equal(err.message, 'There was a fault');
 				done();
 			});
 		});
@@ -125,7 +125,7 @@ describe('client.js', function() {
 		it('should fail', function(done) {
 			var client = new Client('name', 'password', '');
 			client.getData('GetElectronicContractFormFields', {}, function(err, data) {
-				assert.equal(err, 'Invalid login credentials.');
+				assert.equal(err.message, 'Invalid login credentials.');
 				done();
 			});
 		});
@@ -146,7 +146,7 @@ describe('client.js', function() {
 		it('should fail', function(done) {
 			var client = new Client('name', 'password', '');
 			client.getData('GetElectronicContractFormFields', {}, function(err, data) {
-				assert.equal(err, 'ErrorOccurred was returned from server, but no description.');
+				assert.equal(err.message, 'ErrorOccurred was returned from server, but no description.');
 				done();
 			});
 		});
@@ -164,7 +164,7 @@ describe('client.js', function() {
 		it('should fail', function(done) {
 			var client = new Client('name', 'password', '');
 			client.getData('GetElectronicContractFormFields', {}, function(err, data) {
-				assert.equal(err, 'Invalid xml response structure');
+				assert.equal(err.message, 'Invalid xml response structure');
 				done();
 			});
 		});

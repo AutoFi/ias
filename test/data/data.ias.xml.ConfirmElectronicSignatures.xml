@@ -2,7 +2,7 @@
    <s:Body>
 	  <ConfirmElectronicSignaturesResponse xmlns="https://api.iasdirect.com/ElectronicProcessing">
 		 <ConfirmElectronicSignaturesResult xmlns:a="http://schemas.datacontract.org/2004/07/IAS" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-			<a:ErrorDescription></a:ErrorDescription>
+			<a:ErrorDescription>Success</a:ErrorDescription>
 			<a:ErrorOccurred>false</a:ErrorOccurred>
 		 </ConfirmElectronicSignaturesResult>
 	  </ConfirmElectronicSignaturesResponse>

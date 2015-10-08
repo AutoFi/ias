@@ -110,7 +110,14 @@ describe('normalize.js', function() {
 
 
 	describe('.GenerateElectronicContract', function() {
-		
+		var xmljs;
+		before(function(done) {
+			var xml = fs.readFileSync(path.resolve(__dirname, 'data/data.ias.xml.GenerateElectronicContract.nofiles.xml'));
+			xml2js.parseString(xml.toString(), function(err, data) {
+				xmljs = data;
+				done();
+			});
+		});
 		it('should return valid array', function() {
 			var a = normalize.GenerateElectronicContract(contractXmlJs);
 			assert.equal(typeof a, 'object', 'is object');
@@ -118,10 +125,18 @@ describe('normalize.js', function() {
 			assert.equal(a.contractFiles.length, 1, '.contractFiles');
 		});
 
+		it('should handle no contracts returned', function() {
+			var a = normalize.GenerateElectronicContract(xmljs);
+			assert.equal(typeof a, 'object', 'is object');
+			assert.equal(Object.keys(a).length, 1, 'keys not 1');
+			assert.equal(a.contractFiles.length, 0, '.contractFiles');
+		});
+
 		it('should return null with bad data', function() {
 			var a = normalize.GenerateElectronicContract({});
 			assert.equal(a, null);
 		});
+
 	});
 
 
