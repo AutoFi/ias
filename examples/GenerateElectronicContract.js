@@ -88,13 +88,23 @@ var data = {
 	dealerId: '',
 	masterDealerId: '',
 	purchasedPlans: [
-		{fiCodeNumber: '',
-		form: 'G1GMP',
-		formRevisionDate: '',
-		isZeroPaymentPlan: 'false',
-		planId: 'P714',
-		retailPrice: '409',
-		term: '60'}
+		{
+			fiCodeNumber: '',
+			form: 'G1GMP',
+			formRevisionDate: '',
+			isZeroPaymentPlan: 'false',
+			planId: 'P714',
+			retailPrice: '409',
+			term: '60'
+		}, {
+			fiCodeNumber: '',
+			form: 'WRRPNCXX',
+			formRevisionDate: '',
+			isZeroPaymentPlan: 'false',
+			planId: 'P974',
+			retailPrice: '490',
+			term: '60'
+		}
 	],
 	vehicleInfo: {
 		ageType: IAS.common.VehicleAgeTypes[1],
