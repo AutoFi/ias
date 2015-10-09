@@ -123,6 +123,7 @@ describe('normalize.js', function() {
 			assert.equal(typeof a, 'object', 'is object');
 			assert.equal(Object.keys(a).length, 1, 'keys not 1');
 			assert.equal(a.contractFiles.length, 1, '.contractFiles');
+			assert.equal(a.contractFiles[0].form, 'G1GMP', 'form name');
 		});
 
 		it('should handle no contracts returned', function() {
