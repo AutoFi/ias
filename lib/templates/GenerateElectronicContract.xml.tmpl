@@ -199,12 +199,16 @@
 					<ias:HasChromeWheels>{{vehicleInfo.hasChromeWheels}}</ias:HasChromeWheels>
 					<ias:HasDealerUpgradedWheelsTires>{{vehicleInfo.hasDealerUpgradedWheelsTires}}</ias:HasDealerUpgradedWheelsTires>
 					<ias:HasRunFlatTires>{{vehicleInfo.hasRunFlatTires}}</ias:HasRunFlatTires>
+					{{#vehicleInfo.inServiceDate}}
 					<ias:InServiceDate>{{vehicleInfo.inServiceDate}}</ias:InServiceDate>
+					{{/vehicleInfo.inServiceDate}}
 					<ias:MSRP>{{vehicleInfo.msrp}}</ias:MSRP>
 					<ias:Make>{{vehicleInfo.make}}</ias:Make>
 					<ias:Mileage>{{vehicleInfo.mileage}}</ias:Mileage>
 					<ias:Model>{{vehicleInfo.model}}</ias:Model>
+					{{#vehicleInfo.nadaRetail}}
 					<ias:NADARetail>{{vehicleInfo.nadaRetail}}</ias:NADARetail>
+					{{/vehicleInfo.nadaRetail}}
 					<ias:PurchasePrice>{{vehicleInfo.purchasePrice}}</ias:PurchasePrice>
 					<ias:TrimLevel>{{vehicleInfo.trimLevel}}</ias:TrimLevel>
 					<ias:UsageType>{{vehicleInfo.usageType}}</ias:UsageType>
