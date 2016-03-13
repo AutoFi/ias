@@ -50,14 +50,14 @@ describe('normalize.js', function() {
 		});
 	});
 
-	it('should have 6 functions', function() {
+	it('should have 7 functions', function() {
 		var a = 0;
 		Object.keys(normalize).forEach(function(v) {
 			if (typeof normalize[v] === 'function') {
 				a++;
 			}
 		});
-		assert.equal(a, 6);
+		assert.equal(a, 7);
 	});
 
 	describe('.GetRates', function() {
@@ -192,5 +192,35 @@ describe('normalize.js', function() {
 			assert.equal(a, null);
 		});
 	});
+
+	describe('.ConfirmElectronicSignatures', function() {
+		var xmljs;
+		before(function(done) {
+			var xml = fs.readFileSync(path.resolve(__dirname, 'data/data.ias.xml.ConfirmElectronicSignatures.error.xml'));
+			xml2js.parseString(xml.toString(), function(err, data) {
+				xmljs = data;
+				done();
+			});
+		});
+		it('should return valid array', function() {
+			var a = normalize.extractGenerateElectronicRemittanceBatch(xmljs);
+			assert.equal(typeof a, 'object', 'is object');
+			assert.equal(a.success, true, '.success');
+			
+		});
+
+		it('should return null with bad data', function() {
+			var a = normalize.ConfirmElectronicSignatures({});
+			assert.equal(a, null);
+		});
+
+		it('should return error', function() {
+			var a = normalize.ConfirmElectronicSignatures(xmljs);
+			assert.equal(typeof a, 'object', 'is object');
+			assert.equal(a.success, false, '.success');
+			
+		});
+	});
+
 
 });

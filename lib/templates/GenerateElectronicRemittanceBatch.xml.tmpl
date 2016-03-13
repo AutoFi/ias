@@ -1,0 +1,36 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:elec="https://api.iasdirect.com/ElectronicProcessing" xmlns:ias="http://schemas.datacontract.org/2004/07/IAS" xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <elec:GenerateElectronicRemittanceBatch>
+         <!--Optional:-->
+         <elec:request>
+            <ias:Authentication>
+               <ias:LoginName>{{authentication.loginName}}</ias:LoginName>
+               <ias:LoginPassword>{{authentication.loginPassword}}</ias:LoginPassword>
+               {{#authentication.userAgent}}
+                  <ias:UserAgent>{{authentication.userAgent}}</ias:UserAgent>
+               {{/authentication.userAgent}}
+               {{#authentication.userEmailAddress}}
+                  <ias:UserEmailAddress>{{authentication.userEmailAddress}}</ias:UserEmailAddress>
+               {{/authentication.userEmailAddress}}
+               {{#authentication.userId}}
+                  <ias:UserID>{{authentication.userId}}</ias:UserID>
+               {{/authentication.userId}}
+               {{#authentication.userIPAddress}}
+                  <ias:UserIPAddress>{{authentication.userIPAddress}}</ias:UserIPAddress>
+               {{/authentication.userIPAddress}}
+            </ias:Authentication>
+            <!--Optional:-->
+            <ias:DealerID>{{dealerId}}</ias:DealerID>
+            <ias:ElectronicContractsIDs>
+               {{#contractIds}}
+                  <arr:string>{{.}}</arr:string>
+               {{/contractIds}}
+            </ias:ElectronicContractsIDs>
+            {{#referenceNumber}}
+               <ias:ReferenceNumber>{{referenceNumber}}</ias:ReferenceNumber>
+            {{/referenceNumber}}
+         </elec:request>
+      </elec:GenerateElectronicRemittanceBatch>
+   </soapenv:Body>
+</soapenv:Envelope>
