@@ -193,7 +193,7 @@ describe('normalize.js', function() {
 		});
 	});
 
-	describe('.ConfirmElectronicSignatures', function() {
+	describe('.GenerateElectronicRemittanceBatch', function() {
 		var xmljs;
 		before(function(done) {
 			var xml = fs.readFileSync(path.resolve(__dirname, 'data/data.ias.xml.ConfirmElectronicSignatures.error.xml'));
@@ -203,19 +203,18 @@ describe('normalize.js', function() {
 			});
 		});
 		it('should return valid array', function() {
-			var a = normalize.extractGenerateElectronicRemittanceBatch(xmljs);
+			var a = normalize.GenerateElectronicRemittanceBatch(xmljs);
 			assert.equal(typeof a, 'object', 'is object');
 			assert.equal(a.success, true, '.success');
-			
 		});
 
 		it('should return null with bad data', function() {
-			var a = normalize.ConfirmElectronicSignatures({});
+			var a = normalize.GenerateElectronicRemittanceBatch({});
 			assert.equal(a, null);
 		});
 
 		it('should return error', function() {
-			var a = normalize.ConfirmElectronicSignatures(xmljs);
+			var a = normalize.GenerateElectronicRemittanceBatch(xmljs);
 			assert.equal(typeof a, 'object', 'is object');
 			assert.equal(a.success, false, '.success');
 			
