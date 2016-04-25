@@ -194,29 +194,90 @@ describe('normalize.js', function() {
 	});
 
 	describe('.GenerateElectronicRemittanceBatch', function() {
-		var xmljs;
+		var xmljs1, xmljs2, xmlerrorjs, xml1, xml2, xmlerror;
 		before(function(done) {
-			var xml = fs.readFileSync(path.resolve(__dirname, 'data/data.ias.xml.ConfirmElectronicSignatures.error.xml'));
-			xml2js.parseString(xml.toString(), function(err, data) {
-				xmljs = data;
-				done();
+			var xmlerror = fs.readFileSync(path.resolve(__dirname, 'data/data.ias.xml.GenerateElectronicRemittanceBatch.error.xml'));
+			var xml2 = fs.readFileSync(path.resolve(__dirname, 'data/data.ias.xml.GenerateElectronicRemittanceBatch.xml'));
+			var xml1 = fs.readFileSync(path.resolve(__dirname, 'data/data.ias.xml.GenerateElectronicRemittanceBatch-single.xml'));
+			var n = 0;
+			function fin(){
+				n++;
+				if (n === 3) {
+					done();
+				}
+			}
+			xml2js.parseString(xmlerror.toString(), function(err, data) {
+				xmlerrorjs = data;
+				fin();
 			});
+			xml2js.parseString(xml1.toString(), function(err, data) {
+				xmljs1 = data;
+				fin();
+			});
+			xml2js.parseString(xml2.toString(), function(err, data) {
+				xmljs2 = data;
+				fin();
+			});
+
 		});
-		it('should return valid array', function() {
-			var a = normalize.GenerateElectronicRemittanceBatch(xmljs);
+		it('should return valid array with 2 batches', function() {
+			var a = normalize.GenerateElectronicRemittanceBatch(xmljs2);
 			assert.equal(typeof a, 'object', 'is object');
 			assert.equal(a.success, true, '.success');
+			assert.equal(a.batches.length, 2, 'batches len');
+			assert.deepEqual(a.batches[0], {
+      "BatchID": "A-56904"
+      , "BatchMailTo": "Innovative Aftermarket Systems, L.P."
+      , "BatchMailToAddress": "12800 Angel Side Drive"
+      , "BatchMailToCity": "Leander"
+      , "BatchMailToState": "TX"
+      , "BatchMailToZip": "78641"
+      , "BatchPayee": "Innovative Aftermarket Systems, L.P."
+      , "BatchPayeeAddress": "12800 Angel Side Drive"
+      , "BatchPayeeCity": "Leander"
+      , "BatchPayeeState": ""
+      , "BatchPayeeZip": "78641"
+      , "ContractCount": "2"
+      , "DealerReferenceNumber": ""
+      , "TotalDealerRemit": "431.5"
+}
+, 'data');
+		});
+		it('should return valid array a single batch', function() {
+			var a = normalize.GenerateElectronicRemittanceBatch(xmljs1);
+			assert.equal(typeof a, 'object', 'is object');
+			assert.equal(a.success, true, '.success');
+			assert.equal(a.batches.length, 1, 'batches len');
+			assert.deepEqual(a.batches[0], {
+      "BatchID": "A-56904"
+      , "BatchMailTo": "Innovative Aftermarket Systems, L.P."
+      , "BatchMailToAddress": "12800 Angel Side Drive"
+      , "BatchMailToCity": "Leander"
+      , "BatchMailToState": "TX"
+      , "BatchMailToZip": "78641"
+      , "BatchPayee": "Innovative Aftermarket Systems, L.P."
+      , "BatchPayeeAddress": "12800 Angel Side Drive"
+      , "BatchPayeeCity": "Leander"
+      , "BatchPayeeState": ""
+      , "BatchPayeeZip": "78641"
+      , "ContractCount": "2"
+      , "DealerReferenceNumber": ""
+      , "TotalDealerRemit": "431.5"
+}
+, 'data');
 		});
 
-		it('should return null with bad data', function() {
+		it('should return error with bad data', function() {
 			var a = normalize.GenerateElectronicRemittanceBatch({});
-			assert.equal(a, null);
+			assert.equal(a.success, false, '.success');
+			assert.equal(a.message, 'TypeError: Cannot read property \'s:Body\' of undefined', '.message');
+			
 		});
 
 		it('should return error', function() {
-			var a = normalize.GenerateElectronicRemittanceBatch(xmljs);
+			var a = normalize.GenerateElectronicRemittanceBatch(xmlerrorjs);
 			assert.equal(typeof a, 'object', 'is object');
-			assert.equal(a.success, false, '.success');
+			assert(!a.success, '.success');
 			
 		});
 	});
