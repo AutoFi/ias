@@ -40,7 +40,7 @@
 						<a:TotalDealerRemit>280</a:TotalDealerRemit>
 					</a:IElectronicProcessing.ElectronicBatchHeaderType>
 				</a:BatchHeaders>
-				<a:RemittanceRegisterPDF i:nil="true"/>
+				<a:RemittanceRegisterPDF>pdfdata</a:RemittanceRegisterPDF>
 			</GenerateElectronicRemittanceBatchResult>
 		</GenerateElectronicRemittanceBatchResponse>
 	</s:Body>

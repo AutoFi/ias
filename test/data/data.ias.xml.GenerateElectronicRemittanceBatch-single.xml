@@ -24,7 +24,6 @@
 						<a:TotalDealerRemit>431.5</a:TotalDealerRemit>
 					</a:IElectronicProcessing.ElectronicBatchHeaderType>
 				</a:BatchHeaders>
-				<a:RemittanceRegisterPDF i:nil="true"/>
 			</GenerateElectronicRemittanceBatchResult>
 		</GenerateElectronicRemittanceBatchResponse>
 	</s:Body>

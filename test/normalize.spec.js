@@ -225,6 +225,7 @@ describe('normalize.js', function() {
 			assert.equal(typeof a, 'object', 'is object');
 			assert.equal(a.success, true, '.success');
 			assert.equal(a.batches.length, 2, 'batches len');
+			assert.equal(a.pdf, 'pdfdata', 'pdf');
 			assert.deepEqual(a.batches[0], {
       "BatchID": "A-56904"
       , "BatchMailTo": "Innovative Aftermarket Systems, L.P."
@@ -248,6 +249,7 @@ describe('normalize.js', function() {
 			assert.equal(typeof a, 'object', 'is object');
 			assert.equal(a.success, true, '.success');
 			assert.equal(a.batches.length, 1, 'batches len');
+			assert(!a.pdf, 'pdf');
 			assert.deepEqual(a.batches[0], {
       "BatchID": "A-56904"
       , "BatchMailTo": "Innovative Aftermarket Systems, L.P."
