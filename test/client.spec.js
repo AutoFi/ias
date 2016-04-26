@@ -29,18 +29,6 @@ describe('client.js', function() {
 		});
 	});
 
-
-
-	// describe('getData', function() {
-	// 	it('should fail with unsupported serviceMethod', function(done) {
-	// 		var client = new Client('ln','pw','d');
-	// 		client.getData('ASDFASDFASDFASDF', {}, function(err) {
-	// 			assert.equal(err, 'Service method not supported');
-	// 			done();
-	// 		});
-	// 	});		
-	// });
-
 	describe('getData', function() {
 		it('should fail with unsupported serviceMethod', function(done) {
 			var client = new Client('ln','pw','d');
@@ -55,7 +43,7 @@ describe('client.js', function() {
 				assert.equal(err, 'dealerId is required for GetRates');
 				done();
 			});
-		});		
+		});
 	});
 
 	describe('getData with bad http.statusCode no body', function() {
@@ -230,13 +218,14 @@ describe('client.js', function() {
 				.yields(null, {statusCode: 200}, xml);
 		});
 
-		it('should be successful', function(done) {
-			var client = new Client('name', 'password', 'dealerid');
+		it('should be successful with test env', function(done) {
+			var client = new Client('name', 'password', 'dealerid', 'test');
 			client.getData('GenerateElectronicContract', {}, function(err, data) {
 				if (err) {
 					console.log(err);
 				}
 				assert(!err);
+				assert.equal(request.post.args[0][0].url, 'https://alpha.smartdealerproducts.com/api.iasdirect.com/ElectronicProcessing/ElectronicProcessing.svc', 'test url');
 				assert.equal(data.contractFiles.length, 1, '.contractFiles len');
 				assert.equal(data.contractFiles[0].contractId, '683723', 'contractId');
 				done();

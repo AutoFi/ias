@@ -1,0 +1,47 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+	<s:Body>
+		<GenerateElectronicRemittanceBatchResponse xmlns="https://api.iasdirect.com/ElectronicProcessing">
+			<GenerateElectronicRemittanceBatchResult xmlns:a="http://schemas.datacontract.org/2004/07/IAS" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+				<a:ErrorInfo>
+					<a:ErrorDescription></a:ErrorDescription>
+					<a:ErrorOccurred>false</a:ErrorOccurred>
+				</a:ErrorInfo>
+				 <a:BatchHeaders>
+					<a:IElectronicProcessing.ElectronicBatchHeaderType>
+						<a:BatchID>A-56904</a:BatchID>
+						<a:BatchMailTo>Innovative Aftermarket Systems, L.P.</a:BatchMailTo>
+						<a:BatchMailToAddress>12800 Angel Side Drive</a:BatchMailToAddress>
+						<a:BatchMailToCity>Leander</a:BatchMailToCity>
+						<a:BatchMailToState>TX</a:BatchMailToState>
+						<a:BatchMailToZip>78641</a:BatchMailToZip>
+						<a:BatchPayee>Innovative Aftermarket Systems, L.P.</a:BatchPayee>
+						<a:BatchPayeeAddress>12800 Angel Side Drive</a:BatchPayeeAddress>
+						<a:BatchPayeeCity>Leander</a:BatchPayeeCity>
+						<a:BatchPayeeState i:nil="true"/>
+						<a:BatchPayeeZip>78641</a:BatchPayeeZip>
+						<a:ContractCount>2</a:ContractCount>
+						<a:DealerReferenceNumber i:nil="true"/>
+						<a:TotalDealerRemit>431.5</a:TotalDealerRemit>
+					</a:IElectronicProcessing.ElectronicBatchHeaderType>
+					<a:IElectronicProcessing.ElectronicBatchHeaderType>
+						<a:BatchID>A-56905</a:BatchID>
+						<a:BatchMailTo>Innovative Aftermarket Systems, L.P.</a:BatchMailTo>
+						<a:BatchMailToAddress>12800 Angel Side Drive</a:BatchMailToAddress>
+						<a:BatchMailToCity>Leander</a:BatchMailToCity>
+						<a:BatchMailToState>TX</a:BatchMailToState>
+						<a:BatchMailToZip>78641</a:BatchMailToZip>
+						<a:BatchPayee>Innovative Aftermarket Systems, L.P.</a:BatchPayee>
+						<a:BatchPayeeAddress>12800 Angel Side Drive</a:BatchPayeeAddress>
+						<a:BatchPayeeCity>Leander</a:BatchPayeeCity>
+						<a:BatchPayeeState i:nil="true"/>
+						<a:BatchPayeeZip>78641</a:BatchPayeeZip>
+						<a:ContractCount>1</a:ContractCount>
+						<a:DealerReferenceNumber i:nil="true"/>
+						<a:TotalDealerRemit>280</a:TotalDealerRemit>
+					</a:IElectronicProcessing.ElectronicBatchHeaderType>
+				</a:BatchHeaders>
+				<a:RemittanceRegisterPDF>pdfdata</a:RemittanceRegisterPDF>
+			</GenerateElectronicRemittanceBatchResult>
+		</GenerateElectronicRemittanceBatchResponse>
+	</s:Body>
+</s:Envelope>

@@ -1,0 +1,13 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+   <s:Body>
+      <GenerateElectronicRemittanceBatchResponse xmlns="https://api.iasdirect.com/ElectronicProcessing">
+         <GenerateElectronicRemittanceBatchResult xmlns:a="http://schemas.datacontract.org/2004/07/IAS" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <a:ErrorInfo>
+               <a:ErrorDescription>The batch creation process returned no batches.</a:ErrorDescription>
+               <a:ErrorOccurred>true</a:ErrorOccurred>
+            </a:ErrorInfo>
+            <a:RemittanceRegisterPDF i:nil="true"/>
+         </GenerateElectronicRemittanceBatchResult>
+      </GenerateElectronicRemittanceBatchResponse>
+   </s:Body>
+</s:Envelope>
