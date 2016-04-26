@@ -29,18 +29,6 @@ describe('client.js', function() {
 		});
 	});
 
-
-
-	// describe('getData', function() {
-	// 	it('should fail with unsupported serviceMethod', function(done) {
-	// 		var client = new Client('ln','pw','d');
-	// 		client.getData('ASDFASDFASDFASDF', {}, function(err) {
-	// 			assert.equal(err, 'Service method not supported');
-	// 			done();
-	// 		});
-	// 	});		
-	// });
-
 	describe('getData', function() {
 		it('should fail with unsupported serviceMethod', function(done) {
 			var client = new Client('ln','pw','d');
@@ -55,7 +43,7 @@ describe('client.js', function() {
 				assert.equal(err, 'dealerId is required for GetRates');
 				done();
 			});
-		});		
+		});
 	});
 
 	describe('getData with bad http.statusCode no body', function() {
