@@ -1,14 +1,13 @@
 var assert = require('assert');
 var sinon = require('sinon');
 var fs = require('fs');
-
-require = require('really-need');
+var decache = require('decache');
 
 describe('templates.js', function() {
 	var templates;
 	before(function() {
-		templates = require('../lib/templates', {bust: true, keep: false});
-		
+		decache('../lib/templates');
+		templates = require('../lib/templates');
 	});
 	describe('failures', function() {
 		it('should fail with invalid name passed', function(done) {
