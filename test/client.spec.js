@@ -1,9 +1,6 @@
 var assert = require('assert');
 var sinon = require('sinon');
 var fs = require('fs');
-
-require = require('really-need');
-
 var request = require('request');
 
 describe('client.js', function() {
