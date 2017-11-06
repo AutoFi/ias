@@ -1,6 +1,6 @@
 {
   "name": "ias",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A node client to interface with IAS soap web services",
   "keywords": [
     "ias",
@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "async": "2.5.0",
-    "debug": "2.6.8",
+    "debug": "2.6.9",
     "lodash": "4.17.4",
     "mustache": "2.3.0",
     "request": "2.81.0",
