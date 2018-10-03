@@ -1,5 +1,5 @@
 {
-  "name": "ias",
+  "name": "@autofidev/ias",
   "version": "0.1.2",
   "description": "A node client to interface with IAS soap web services",
   "keywords": [
