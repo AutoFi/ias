@@ -15,13 +15,13 @@ describe('client.js', function() {
 		it('should fail with no loginName', function(done) {
 			assert.throws(function() {
 				new Client();
-			});
+			}, { message: 'loginName is required' });
 			done();
 		});
 		it('should fail with no loginPassword', function(done) {
 			assert.throws(function() {
 				new Client('name');
-			});
+			}, { message: 'loginPassword is required' });
 			done();
 		});
 	});
