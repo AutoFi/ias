@@ -1,6 +1,6 @@
 {
   "name": "@autofidev/ias",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "A node client to interface with IAS soap web services",
   "keywords": [
     "ias",
@@ -29,5 +29,8 @@
     "mustache": "2.3.0",
     "request": "2.88.0",
     "xml2js": "0.4.17"
+  },
+  "engines": {
+    "node": "12.14.0"
   }
 }
