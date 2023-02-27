@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "istanbul": "0.4.5",
-    "mocha": "5.2.0",
+    "mocha": "10.2.0",
     "decache": "4.1.0",
     "sinon": "2.3.8"
   },
